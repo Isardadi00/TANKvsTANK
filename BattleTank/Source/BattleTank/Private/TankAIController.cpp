@@ -4,7 +4,7 @@
 
 
 void ATankAIController::BeginPlay()
-{
+{	
 	Super::BeginPlay();
 
 	auto PlayerTank = GetPlayerTank();
