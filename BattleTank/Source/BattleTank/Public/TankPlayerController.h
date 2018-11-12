@@ -26,9 +26,14 @@ private:
 	// the crosshair hits the world
 	void AimTowardsCrosshair();
 
-	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
+	bool GetSightRayHitLocation(FVector& HitLocation) const;
 
 	bool GetLookDirection(FVector2D & ScreenLocation, FVector & LookDirection) const;
+
+	bool GetLookVectorHitLocation(FVector LookDirection, FVector& HitLocation) const;
+
+	UPROPERTY(EditAnywhere)
+	float LineTraceRange = 1000000;
 
 	UPROPERTY(EditAnywhere)
 	float CrossHairXLocation = 0.5;
