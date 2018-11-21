@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "../Public/Tank.h"
+#include "../Public/TankAimingComponent.h"
 
 // Sets default values
 ATank::ATank()
@@ -10,7 +11,7 @@ ATank::ATank()
 	TankAimingComponent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aiming Component"));
 }
 
-void ATank::SetBarrelReference(UStaticMeshComponent * BarrelToSet)
+void ATank::SetBarrelReference(UTankBarrel * BarrelToSet)
 {
 	TankAimingComponent->SetBarrelReference(BarrelToSet);
 }
