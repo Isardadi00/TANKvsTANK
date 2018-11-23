@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "TankAimingComponent.h"
+#include "Engine/World.h"
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"
 
@@ -50,4 +51,8 @@ private:
 	
 	// Local Barrel reference for spawning projectile
 	UTankBarrel* Barrel = nullptr;
+
+	float ReloadTime = 2;
+
+	double LastFireTime = 0;
 };
