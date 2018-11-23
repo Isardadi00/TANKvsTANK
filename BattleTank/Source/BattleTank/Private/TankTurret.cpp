@@ -3,9 +3,12 @@
 #include "../Public/TankTurret.h"
 #include "BattleTank.h"
 
-void Azimuth(float TurretRelativeSpeed)
+void UTankTurret::Rotate(float RelativeSpeed)
 {
-	TurretRelativeSpeed = FMath::Clamp<float>(TurretRelativeSpeed, -1, +1);
+	RelativeSpeed = FMath::Clamp<float>(RelativeSpeed, -1, +1);
+	auto RotationChange = RelativeSpeed * MaxDegreesPerSecond * GetWorld()->DeltaTimeSeconds;
+	auto NewRotation = RelativeRotation.Yaw + RotationChange;
+	SetRelativeRotation(FRotator(0, NewRotation, 0));
 }
 
 
