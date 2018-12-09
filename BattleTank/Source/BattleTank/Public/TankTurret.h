@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright EmbraceIT Ltd.
 
 #pragma once
 
@@ -17,6 +17,6 @@ public:
 	void Rotate(float RelativeSpeed);
 
 private:
-	UPROPERTY(EditDefaultsOnly, Category = TurretSetup)
+	UPROPERTY(EditDefaultsOnly, Category = "TurretSetup")
 		float MaxDegreesPerSecond = 25;
 };

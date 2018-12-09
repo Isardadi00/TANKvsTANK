@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright EmbraceIT Ltd.
 
 #pragma once
 
@@ -17,11 +17,11 @@ public:
 	void Elevate(float BarrelRelativeSpeed);
 
 private:
-	UPROPERTY(EditDefaultsOnly, Category = BarrelSetup)
+	UPROPERTY(EditDefaultsOnly, Category = "BarrelSetup")
 		float MaxDegreesPerSecond = 10;
-	UPROPERTY(EditDefaultsOnly, Category = BarrelSetup)
+	UPROPERTY(EditDefaultsOnly, Category = "BarrelSetup")
 		float MaxElevationDegrees = 40;
-	UPROPERTY(EditDefaultsOnly, Category = BarrelSetup)
+	UPROPERTY(EditDefaultsOnly, Category = "BarrelSetup")
 		float MinimumElevationDegrees = 0;
 };
 

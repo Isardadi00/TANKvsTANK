@@ -1,4 +1,5 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright EmbraceIT Ltd.
+
 
 #include "../Public/TankTrack.h"
 #include "BattleTank.h"
