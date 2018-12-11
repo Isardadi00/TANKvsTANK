@@ -52,7 +52,6 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	{
 		FiringState = EFiringState::Locked;
 	}
-	//TODO Handle aiming and locked state
 }
 
 int32 UTankAimingComponent::GetRoundsLeft() const
