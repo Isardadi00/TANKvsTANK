@@ -7,6 +7,7 @@
 #include "Engine/World.h"
 #include "Components/StaticMeshComponent.h"
 #include "Runtime/Engine/Classes/Particles/ParticleSystemComponent.h"
+#include "Runtime/Engine/Classes/PhysicsEngine/RadialForceComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Projectile.generated.h"
 
@@ -40,4 +41,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	UParticleSystemComponent * ImpactBlast = nullptr;
+
+	UPROPERTY(VisibleAnywhere)
+	URadialForceComponent * ExplosionForce = nullptr;
 };
